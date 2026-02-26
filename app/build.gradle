@@ -1,0 +1,11 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+android {
+    compileSdkVersion 33
+    defaultConfig { applicationId "eu.kanade.tachiyomi.animeextension.ar.anime3rb"; minSdkVersion 21; targetSdkVersion 33; versionCode 1; versionName "1.0" }
+}
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.20"
+    implementation "org.jsoup:jsoup:1.15.3"
+    compileOnly "eu.kanade.tachiyomi:source-api:1.1"
+}
